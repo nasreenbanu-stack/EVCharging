@@ -4,6 +4,7 @@ from pathlib import Path
 import joblib
 import pandas as pd
 import matplotlib.pyplot as plt
+import pickle
 
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
@@ -126,6 +127,21 @@ joblib.dump(
     model,
     "models/gradient_boosting_regression_final.joblib",
 )
+# Save the trained model using Python Pickling
+with open("models/gradient_boosting_regression_final.pkl", "wb") as file:
+    pickle.dump(model, file)
+
+print("Model saved using Python Pickling.")
+
+# Load the model back from the pickle file
+with open("models/gradient_boosting_regression_final.pkl", "rb") as file:
+    loaded_model = pickle.load(file)
+
+# Verify the loaded model produces predictions
+pickle_predictions = loaded_model.predict(X_test)
+
+print("Pickle model loaded successfully.")
+print(f"Pickle model predictions: {len(pickle_predictions)}")
 
 # Plot actual versus predicted Demand
 plt.figure(figsize=(8, 6))
