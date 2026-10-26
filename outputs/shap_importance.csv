@@ -1,0 +1,24 @@
+Feature,MeanAbsoluteSHAP
+numeric__StartHour,0.4068690105389092
+categorical__ChargerType_1,0.10660800875654766
+categorical__ChargerCompany_1,0.09589309192699666
+categorical__ChargerType_0,0.0898199435133663
+categorical__ChargerCompany_0,0.06824168197064479
+categorical__Location_hotel,0.05241034719032374
+categorical__Location_market,0.03038604959977527
+categorical__Location_camping,0.010725407487771184
+numeric__StartMonth,0.009746355984805779
+categorical__Location_resort,0.003608689312879007
+categorical__Location_accommodation,0.003466866353727206
+categorical__Location_sightseeing,0.00220916086869053
+categorical__Location_apartment,0.00047875942299737
+numeric__StartDayOfMonth,0.00016197117517431276
+categorical__Location_bus garage,0.0
+categorical__Location_golf,0.0
+categorical__Location_company,0.0
+categorical__Location_public institution,0.0
+categorical__Location_public parking lot,0.0
+categorical__Location_restaurant,0.0
+categorical__Location_public area,0.0
+numeric__StartDayOfWeek,0.0
+numeric__IsWeekend,0.0
